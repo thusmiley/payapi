@@ -39,6 +39,14 @@
     color: inherit;
   }
 }
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
   font-family: "DM Serif Display", serif;
   font-weight: bold;
