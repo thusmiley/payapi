@@ -25,7 +25,7 @@ const CTA = () => {
             value={email}
             onChange={handleEmailChange}
             required
-            className="bg-white rounded-full py-4 pl-[27px] w-[100%] boxShadow font-bold text-darkBlue placeholder:text-lightBlue placeholder:text-[15px] text-[15px] outline-none"
+            className="bg-white rounded-full py-4 pl-[27px] w-[100%] boxShadow font-bold text-darkBlue placeholder:text-lightBlue/50 placeholder:text-[15px] text-[15px] outline-none"
           />
           <button className="cta ctaPink w-[100%] mt-4 mb-6 md:my-0 md:absolute md:w-[190px] md:right-0">Schedule a Demo</button>
         </form>

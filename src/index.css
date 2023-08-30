@@ -25,7 +25,7 @@
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     font-family: "Public Sans", sans-serif;
-    @apply text-lightBlue bg-linkWhite;
+    @apply text-lightBlue bg-[#EDF3F8];
   }
   img {
     display: block;
@@ -39,7 +39,7 @@
     color: inherit;
   }
 }
-.heading1, .heading2, .heading3, .heading4 {
+.heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
   font-family: "DM Serif Display", serif;
   font-weight: bold;
 }
@@ -89,9 +89,68 @@
   @apply text-darkBlue;
 }
 
+.heading5 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  @apply text-darkPink;
+}
+@screen md {
+  .heading5 {
+    line-height: 40px;
+  }
+}
+@screen md {
+  .heading5 {
+    font-size: 32px;
+  }
+}
+
+.heading6 {
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.43px;
+  @apply text-darkBlue;
+}
+@screen md {
+  .heading6 {
+    font-size: 48px;
+    letter-spacing: -0.37px;
+  }
+}
+@screen xl {
+  .heading6 {
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.43px;
+  }
+}
+
 .paragraph {
   font-size: 15px;
   line-height: 28px;
+}
+
+.pricing-li {
+  font-size: 16px;
+  line-height: 28px;
+  @apply text-darkBlue text-left;
+}
+
+.pricing-li li {
+  opacity: 0.5;
+  position: relative;
+  @apply mb-2 last:mb-0;
+}
+
+.pricing-li li.active {
+  opacity: 1;
+}
+
+.pricing-li li.active::before {
+  content: url("/src/assets/shared/desktop/icon-check.svg");
+  position: absolute;
+  left: -28px;
 }
 
 /* general styles  */
@@ -138,6 +197,14 @@
 
 .ctaTransparent:hover {
   @apply text-navy bg-linkWhite;
+}
+
+.ctaAccess {
+  @apply text-darkBlue border-[1px] border-darkBlue;
+}
+
+.ctaAccess:hover {
+  @apply text-linkWhite bg-darkBlue;
 }
 
 .sidebar {
