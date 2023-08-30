@@ -188,14 +188,14 @@ a {
   padding: 16px 32px;
   border-radius: 50px;
   font-weight: bold;
-  transition: 0.15s ease;
+  transition-duration: 0.15s;
 }
 
 .ctaPink {
   @apply text-linkWhite bg-darkPink;
 }
 
-.ctaPink:hover {
+.ctaPink:hover, .ctaPink:active, .ctaPink:focus {
   @apply bg-charmPink text-linkWhite;
 }
 
@@ -203,7 +203,7 @@ a {
   @apply text-linkWhite bg-navy;
 }
 
-.ctaNavy:hover {
+.ctaNavy:hover, .ctaNavy:active, .ctaNavy:focus {
   @apply text-navy bg-linkWhite;
 }
 
@@ -211,7 +211,7 @@ a {
   @apply text-darkBlue border-[1px] border-darkBlue bg-linkWhite;
 }
 
-.ctaAccess:hover {
+.ctaAccess:hover, .ctaAccess:active, .ctaAccess:focus {
   @apply text-linkWhite bg-darkBlue;
 }
 
