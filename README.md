@@ -17,8 +17,8 @@ PayAPI website
 
 ### Links
 
-- Git URL: https://github.com/thusmiley/coffeeroasters.git
-- Live Site URL: https://coffeeroasters-alpha.vercel.app/
+- Git URL: https://github.com/thusmiley/payapi.git
+- Live Site URL: https://payapi-opal.vercel.app/
 
 ### Built with
 
