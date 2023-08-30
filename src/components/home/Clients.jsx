@@ -24,7 +24,7 @@ const Clients = () => {
             Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to
             create easy and accessible experiences for their users.
           </p>
-          <a href="/about" className="cta ctaTransparent border-[1px] border-linkWhite">
+          <a href="/about" className="cta ctaNavy border-[1px] border-linkWhite">
             About Us
           </a>
         </div>

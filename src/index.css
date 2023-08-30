@@ -180,7 +180,7 @@
   padding: 16px 32px;
   border-radius: 50px;
   font-weight: bold;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease;
 }
 
 .ctaPink {
@@ -191,16 +191,16 @@
   @apply bg-charmPink text-linkWhite;
 }
 
-.ctaTransparent {
-  @apply text-linkWhite bg-transparent;
+.ctaNavy {
+  @apply text-linkWhite bg-navy;
 }
 
-.ctaTransparent:hover {
+.ctaNavy:hover {
   @apply text-navy bg-linkWhite;
 }
 
 .ctaAccess {
-  @apply text-darkBlue border-[1px] border-darkBlue;
+  @apply text-darkBlue border-[1px] border-darkBlue bg-linkWhite;
 }
 
 .ctaAccess:hover {
