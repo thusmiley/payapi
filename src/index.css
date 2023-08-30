@@ -43,7 +43,7 @@ input,
 textarea,
 button,
 select,
-a {
+a, .cta {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -101,7 +101,6 @@ a {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.18px;
-  @apply text-darkPink;
 }
 @screen md {
   .heading5 {
@@ -118,7 +117,6 @@ a {
   font-size: 56px;
   line-height: 72px;
   letter-spacing: -0.43px;
-  @apply text-darkBlue;
 }
 @screen md {
   .heading6 {
@@ -279,6 +277,10 @@ input:-webkit-autofill:active {
   .home-features-bg {
     background: url("/src/assets/shared/desktop/bg-pattern-circle.svg") no-repeat right -40% bottom 0;
     background-size: 50%;
+  }
+  .about-team-bg {
+    background: url("/src/assets/shared/desktop/bg-pattern-circle.svg") no-repeat left -60% bottom 0;
+    background-size: contain;
   }
 }
 .home-footer-bg {

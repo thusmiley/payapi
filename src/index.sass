@@ -38,7 +38,7 @@ input,
 textarea,
 button,
 select,
-a 
+a, .cta
     -webkit-tap-highlight-color: transparent
 
 // headings and paragraphs
@@ -87,7 +87,6 @@ a
     font-size: 24px
     line-height: 32px
     letter-spacing: -.18px
-    @apply text-darkPink
     @screen md
         line-height: 40px
     @screen md
@@ -97,7 +96,6 @@ a
     font-size: 56px
     line-height: 72px
     letter-spacing: -.43px
-    @apply text-darkBlue
     @screen md
         font-size: 48px
         letter-spacing: -.37px
@@ -218,6 +216,9 @@ input:-webkit-autofill:active
     .home-features-bg
         background: url('/src/assets/shared/desktop/bg-pattern-circle.svg') no-repeat right -40% bottom 0
         background-size: 50%
+    .about-team-bg
+        background: url('/src/assets/shared/desktop/bg-pattern-circle.svg') no-repeat left -60% bottom 0
+        background-size: contain
 
 .home-footer-bg
     background: url('/src/assets/shared/desktop/bg-pattern-circle.svg'), #1B262F
