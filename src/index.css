@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --container-w: 92%;
+  }
+  @screen sm {
+    :root {
+      --container-w: clamp(327px, 90%, 1000px);
+    }
+  }
+  @screen 2xl {
+    :root {
+      --container-w: clamp(1000px, 85%, 1110px);
+    }
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    font-family: "Public Sans", sans-serif;
+    @apply text-lightBlue bg-linkWhite;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  a:hover {
+    color: inherit;
+  }
+}
+.heading1, .heading2, .heading3, .heading4 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+}
+
+.heading1,
+.heading2 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+}
+
+.heading1 {
+  @apply text-darkBlue;
+}
+
+@screen md {
+  .heading1,
+  .heading2,
+  .heading3 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+  }
+}
+@screen xl {
+  .heading1 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+  }
+}
+.heading2 {
+  @apply text-linkWhite;
+}
+
+.heading3 {
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: -0.28px;
+  @apply text-darkBlue;
+}
+
+.heading4 {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.14px;
+  @apply text-darkBlue;
+}
+
+.paragraph {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+/* general styles  */
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.flexAround {
+  @apply flex justify-around items-center;
+}
+
+.flexStart {
+  @apply flex justify-start items-center;
+}
+
+.flexEnd {
+  @apply flex justify-end items-center;
+}
+
+.cta {
+  font-size: 15px;
+  letter-spacing: -0.12px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.ctaPink {
+  @apply text-linkWhite bg-darkPink;
+}
+
+.ctaPink:hover {
+  @apply bg-charmPink text-linkWhite;
+}
+
+.ctaTransparent {
+  @apply text-linkWhite bg-transparent;
+}
+
+.ctaTransparent:hover {
+  @apply text-navy bg-linkWhite;
+}
+
+.sidebar {
+  animation: slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.home-hero-bg {
+  background: url("/src/assets/shared/desktop/bg-pattern-circle.svg") no-repeat bottom center;
+  background-size: 150%;
+}
+@screen xl {
+  .home-hero-bg {
+    background-position: right -150px bottom 0;
+    background-size: 60%;
+  }
+}
+
+.boxShadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input {
+  -webkit-border-radius: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-clip: content-box !important;
+}
+
+.home-clients-bg {
+  background: url("/src/assets/shared/desktop/bg-pattern-circle.svg"), #1B262F;
+  background-repeat: no-repeat;
+  background-position: bottom 450px center;
+  background-size: 150%;
+}
+@screen md {
+  .home-clients-bg {
+    background-position: bottom 350px center;
+    background-size: cover;
+  }
+}
+@screen xl {
+  .home-clients-bg {
+    background-position: bottom 50px left -250px;
+    background-size: 60%;
+  }
+}
+
+@screen xl {
+  .home-features-bg {
+    background: url("/src/assets/shared/desktop/bg-pattern-circle.svg") no-repeat right -40% bottom 0;
+    background-size: 50%;
+  }
+}
+.home-footer-bg {
+  background: url("/src/assets/shared/desktop/bg-pattern-circle.svg"), #1B262F;
+  background-repeat: no-repeat;
+  background-position: top 170px center;
+}
+@screen md {
+  .home-footer-bg {
+    background-position: top -50px right -200px;
+  }
+}
+
+.socials svg path:hover {
+  @apply fill-charmPink;
+}/*# sourceMappingURL=index.css.map */
