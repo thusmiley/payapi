@@ -19,7 +19,7 @@ const Hero = () => {
 
         <div className="text-center xl:text-left">
           <h1 className="heading1 -mt-6 mb-6 md:max-w-[573px] md:mx-auto md:mb-[22px] xl:mt-0 xl:mb-10">Start building with our APIs for absolutely free.</h1>
-          <form onSubmit={handleSubmit} className="flexCenter flex-col md:flex-row relative md:max-w-[445px] md:mx-auto xl:mx-0">
+          <form onSubmit={handleSubmit} className="subscribe flexCenter flex-col md:flex-row relative md:max-w-[445px] md:mx-auto xl:mx-0">
             <input
               type="email"
               name="email"
@@ -29,7 +29,7 @@ const Hero = () => {
               value={email}
               onChange={handleEmailChange}
               required
-              className="bg-white rounded-full py-4 pl-[27px] w-[100%] boxShadow font-bold text-darkBlue placeholder:text-lightBlue/50 placeholder:text-[15px] text-[15px] outline-none"
+              className="bg-white  rounded-full py-4 pl-[27px] w-[100%] boxShadow font-bold placeholder:text-darkBlue/50"
             />
             <button className="cta ctaPink w-[100%] mt-4 mb-6 md:my-0 md:absolute md:w-[190px] md:right-0">Schedule a Demo</button>
           </form>

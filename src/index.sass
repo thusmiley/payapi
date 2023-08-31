@@ -89,8 +89,6 @@ a, .cta
     letter-spacing: -.18px
     @screen md
         line-height: 40px
-    @screen md
-        font-size: 32px
 
 .heading6
     font-size: 56px
@@ -190,15 +188,19 @@ a, .cta
     -webkit-appearance: none
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
     
-input
+input, 
+textarea
     -webkit-border-radius: 0
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active 
+    outline: none
+    @apply text-darkBlue text-[15px] leading-[25px] caret-darkPink
+    
+.subscribe input:-webkit-autofill,
+.subscribe input:-webkit-autofill:hover,
+.subscribe input:-webkit-autofill:focus,
+.subscribe input:-webkit-autofill:active 
     -webkit-box-shadow: 0 0 0 30px white inset !important
     background-clip: content-box !important
+    -webkit-text-fill-color: #36536b !important
 
 .home-clients-bg
     background: url('/src/assets/shared/desktop/bg-pattern-circle.svg'), #1B262F
@@ -229,3 +231,48 @@ input:-webkit-autofill:active
 
 .socials svg path:hover
     @apply fill-charmPink
+
+.contact input,
+.contact textarea
+    background: transparent
+    @apply border-b-[1px] border-darkBlue/50
+    padding: 24px 0 16px 20px
+    
+.contact input:-webkit-autofill,
+.contact input:-webkit-autofill:hover,
+.contact input:-webkit-autofill:focus,
+.contact input:-webkit-autofill:active 
+    -webkit-box-shadow: 0 0 0 40px #EDF3F8 inset !important
+    background-clip: content-box !important
+    -webkit-text-fill-color: #36536b !important
+
+.contact label
+    font-size: 15px
+    line-height: 25px
+    letter-spacing: -.12px
+
+input[type="checkbox"]
+    @apply bg-darkBlue/25
+    -webkit-appearance: none
+    appearance: none
+    padding: 0
+    transform: translateY(-0.075em)
+    border: none
+    width: 24px
+    height: 24px
+    display: grid
+    place-content: center
+
+input[type="checkbox"]:checked
+    @apply bg-darkPink
+
+input[type="checkbox"]::before
+    content: url('/src/assets/shared/desktop/check-white.svg')
+    width: 24px
+    height: 24px
+    transform: scale(0)
+    transition: 120ms ease-in-out
+    margin-left: 10px
+
+input[type="checkbox"]:checked::before
+    transform: scale(1)

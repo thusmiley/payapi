@@ -12,14 +12,14 @@ const About = () => {
         </h1>
 
         <div className="mt-10 md:mt-[54px] md:flex md:justify-between md:items-start md:text-left">
-          <h2 className="heading5 text-darkBlue mb-4 md:mb-0">Our Vision</h2>
+          <h2 className="heading5 text-darkBlue mb-4 md:mb-0 xl:text-[32px]">Our Vision</h2>
           <p className="paragraph md:w-[70%]">
             Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability
             to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology.
           </p>
         </div>
         <div className="mt-12 md:mt-[64px] md:flex md:justify-between md:items-start md:text-left xl:mt-[56px]">
-          <h2 className="heading5 text-darkBlue mb-4 md:mb-0">Our Business</h2>
+          <h2 className="heading5 text-darkBlue mb-4 md:mb-0 xl:text-[32px]">Our Business</h2>
           <p className="paragraph md:w-[70%]">
             At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as
             well as robust reporting for traditional financial institutions and developers.
@@ -53,14 +53,14 @@ const About = () => {
 
       <div className="w-container px-cx mx-auto text-center mt-12 md:mt-[64px] xl:max-w-[920px] xl:mt-[72px]">
         <div className="md:flex md:justify-between md:items-start md:text-left">
-          <h2 className="heading5 text-darkBlue mb-4 md:mb-0">The Culture</h2>
+          <h2 className="heading5 text-darkBlue mb-4 md:mb-0 xl:text-[32px]">The Culture</h2>
           <p className="paragraph md:w-[70%]">
             We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or
             co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.
           </p>
         </div>
         <div className="mt-12 md:mt-[64px] md:flex md:justify-between md:items-start md:text-left xl:mt-[56px]">
-          <h2 className="heading5 text-darkBlue mb-4 md:mb-0">The People</h2>
+          <h2 className="heading5 text-darkBlue mb-4 md:mb-0 xl:text-[32px]">The People</h2>
           <p className="paragraph md:w-[70%]">
             We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.
           </p>
