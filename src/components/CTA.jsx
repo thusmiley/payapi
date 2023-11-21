@@ -12,7 +12,7 @@ const CTA = () => {
   };
 
   return (
-    <section className="mb-20 md:mb-[100px]">
+    <section className="mb-20 md:mb-[100px] xl:mt-[400px]">
       <div className="w-container px-cx mx-auto text-center xl:flex xl:flex-row xl:justify-between xl:items-center xl:text-left">
         <h2 className="heading1 mb-8 md:mb-10 xl:text-[48px] xl:leading-[56px] xl:tracking-[-.37px] xl:mb-0">Ready to start?</h2>
         <form onSubmit={handleSubmit} className="subscribe flexCenter flex-col md:flex-row relative md:max-w-[445px] md:mx-auto xl:w-[100%] xl:mx-0">

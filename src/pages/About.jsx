@@ -5,7 +5,7 @@ import teamDesktop from "../assets/about/desktop/image-team-members.jpg";
 
 const About = () => {
   return (
-    <section className="mt-[-110px] mb-20 md:mt-[-150px] md:mb-[72px] xl:mt-[-430px] xl:mb-[100px]">
+    <section className="mt-[-110px] mb-20 md:mt-[-150px] md:mb-[72px] xl:mt-[-430px] xl:mb-[-300px]">
       <div className="w-container px-cx mx-auto text-center xl:max-w-[920px]">
         <h1 className="heading1 md:max-w-[573px] md:mx-auto xl:text-[56px] xl:leading-[56px] xl:mx-0 xl:text-left xl:max-w-[730px]">
           We empower innovators by delivering access to the financial system

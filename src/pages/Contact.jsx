@@ -8,7 +8,7 @@ import nvidia from "../assets/shared/mobile/nvidia.svg";
 
 const Contact = () => {
   return (
-    <section className="mt-[-110px] mb-20 md:mt-[-150px] md:mb-[100px] xl:mt-[-430px] xl:mb-[93px]">
+    <section className="mt-[-120px] mb-20 md:mt-[-150px] md:mb-[100px] xl:mt-[-430px] xl:mb-[393px] xl:z-20 xl:absolute xl:left-0 xl:right-0 xl:mx-auto">
       <div className="w-container px-cx mx-auto text-center xl:flex">
         <div>
           <h1 className="heading1 md:max-w-[573px] md:mx-auto xl:text-[56px] xl:leading-[56px] xl:mx-0 xl:text-left xl:max-w-[730px]">

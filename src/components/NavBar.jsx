@@ -8,8 +8,8 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="home-hero-bg">
-      <div className="w-container px-cx mx-auto flexBetween pt-10 pb-[160px] relative md:pb-[230px] xl:pb-[500px]">
+    <header className="home-hero-bg xl:z-0">
+      <div className="w-container px-cx mx-auto flexBetween pt-10 pb-[160px] relative md:pb-[230px] xl:pb-[500px] xl:z-0">
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
@@ -36,7 +36,6 @@ const NavBar = () => {
 
           {/* mobile menu  */}
           <div className={`${!toggle ? "hidden" : "fixed"} md:hidden left-[18%] top-0 bottom-0 right-0 bg-navy/[0.97] px-[5%] pt-12 z-10`}>
-
             <img src={close} alt="close menu" onClick={() => setToggle(!toggle)} className="md:hidden cursor-pointer float-right" />
 
             <div

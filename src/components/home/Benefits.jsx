@@ -5,7 +5,7 @@ import consumer from "../../assets/home/desktop/icon-consumer-payments.svg";
 
 const Benefits = () => {
   return (
-    <section className="my-20 md:my-[100px] xl:mt-[60px]">
+    <section className="my-20 md:my-[100px] xl:mt-[60px] xl:mb-[-300px]">
       <div className="w-container px-cx mx-auto text-center md:flex md:flex-row">
         <div className="flexCenter flex-col">
           <img src={personal} alt="benefit icon" />

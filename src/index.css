@@ -25,7 +25,7 @@
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     font-family: "Public Sans", sans-serif;
-    @apply text-lightBlue bg-[#EDF3F8];
+    @apply text-lightBlue bg-[#EDF3F8] relative;
   }
   img {
     display: block;
@@ -299,7 +299,7 @@ textarea {
 
 .contact input,
 .contact textarea {
-  background: transparent;
+  background: #EDF3F8;
   @apply border-b-[1px] border-darkBlue/50;
   padding: 24px 0 16px 20px;
 }
